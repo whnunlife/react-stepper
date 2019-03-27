@@ -142,8 +142,8 @@ export default class Step extends Component {
         ) : (
           <div style={ titleStyle } className="stepper-number">{ title }</div>
         )}
-        { !first && <div style={ leftStyle }></div> }
-        { !isLast && <div style={ rightStyle }></div> }
+        { !first && <div style={ leftStyle } className="stepper-left-line"></div> }
+        { !isLast && <div style={ rightStyle } className="stepper-right-line"></div> }
       </div>
     );
   }
